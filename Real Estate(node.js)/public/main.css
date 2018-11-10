@@ -1,0 +1,379 @@
+﻿
+/*smooth scrolling*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*login modal--------------------------------------------------------- */
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* fix background when modal is open*/
+fixedbg {
+    position: fixed;
+    width: 100%;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container2 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/*close login model*/ /*---------------------------------------------------------------------------------------------------*/
+
+/*background color gradient after scrolling
+body {
+  height: 3000px;/* Used to enable scrolling 
+  background: linear-gradient(180deg, #ffffff 0%,#ffffff 25%, #e8e8e8 61%, #e8e8e8 75%,#969696 95%);
+}*/
+
+
+/*reduce height after each line or para */
+div.a {
+    line-height: 0px;
+}
+
+div.b {
+    line-height: 30px;
+}
+
+div.c {
+    line-height: 0.5cm;
+}
+
+div.d {
+    line-height: 1cm;
+}
+
+/*smooth scrolling whole page (not yet used)*/
+.scrollable {
+    width: 500px;
+    height: 70px;
+    overflow: auto;
+}
+/* for parallax effect  (not used yet)*/
+.parallax {
+    /* The image used */
+    background-image: url("http://funkyimg.com/i/2LDwL.jpg");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*<!--image zoom effect for cities-->*/
+.zoom {
+    padding: 20px;
+    background-color: url("http://www.kaveribus.com/images/portfolio/img-2.jpg");
+    transition: transform .2s; /* Animation */
+    width: 400px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+    .zoom:hover {
+        transform: scale(1.175); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+/*--- then just write your css here and include /css/main.css<<<where?
+    ..------------image zoom end---*/
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: black;
+}
+
+p.content2 {
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    color: black;
+    width: 20%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    color: #;
+    text-decoration:;
+}
+
+    a:hover {
+        color: #aaa;
+    }
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.clear-fix {
+    clear: both;
+}
+div.logo {
+    text-align: center;
+    margin: 20px 20px 30px 20px;
+    fill: #566375;
+}
+
+.head {
+    padding: 40px 0px;
+    10px 0
+}
+
+.logo-active {
+    fill: #44aacc !important;
+}
+
+#formWrapper {
+    background: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.darken-bg {
+    background: rgba(0,0,0,0) !important;
+    transition: all .3s ease;
+}
+
+div#form {
+    position: absolute;
+    width: 360px;
+    height: 320px;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    right: 10%;
+    top: 50%;
+    margin-left: -180px;
+    margin-top: -240px;
+    opacity: 0.8;
+    background-color: #F0F0F0;
+}
+
+div.form-item {
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+}
+
+input {
+    transition: all .2s ease;
+}
+
+    input.form-style {
+        color: #8a8a8a;
+        display: block;
+        width: 90%;
+        height: 44px;
+        padding: 5px 5%;
+        border: 1px solid #ccc;
+        -moz-border-radius: 27px;
+        -webkit-border-radius: 27px;
+        border-radius: 27px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background-color: #fff;
+        font-family: 'HelveticaNeue','Arial', sans-serif;
+        font-size: 105%;
+        letter-spacing: .8px;
+    }
+
+div.form-item .form-style:focus {
+    outline: none;
+    border: 1px solid #58bff6;
+    color: #58bff6;
+}
+
+div.form-item p.formLabel {
+    position: absolute;
+    left: 26px;
+    top: 50%;
+    transition: all .4s ease;
+    color: #fff;
+}
+
+.formTop {
+    top: -22px !important;
+    left: 26px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #58bff6 !important;
+}
+
+.formStatus {
+    color: #8a8a8a !important;
+}
+
+input[type="submit"].login {
+    float: right;
+    width: 112px;
+    height: 37px;
+    -moz-border-radius: 19px;
+    -webkit-border-radius: 19px;
+    border-radius: 19px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #55b1df;
+    border: 1px solid #55b1df;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+    input[type="submit"].login:hover {
+        background-color: #fff;
+        border: 1px solid #55b1df;
+        color: #55b1df;
+        cursor: pointer;
+    }
+
+    input[type="submit"].login:focus {
+        outline: none;
+    }

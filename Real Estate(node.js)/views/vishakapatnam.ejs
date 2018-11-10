@@ -1,0 +1,8 @@
+
+<% include ./partials/header %>
+
+<!-- Google Map -->
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD_hce37QhlyI59U2KDKiTEJMSlns47d6E'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a href="https://www.sellcompare.co.uk">New website comparing prices on used and recycled mobiles</a></div></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(17.6868159,83.21848150000005),mapTypeId: google.maps.MapTypeId.ROADMAP,fullscreenControl:false,scaleControl:true,draggable:true,streetViewControl:true};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(17.6868159,83.21848150000005)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>undefined undefined<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script><div><small><a href="https://www.embedgooglemap.co.uk">Embed Google Map</a></small></div>
+
+
+<% include ./partials/footer %>
